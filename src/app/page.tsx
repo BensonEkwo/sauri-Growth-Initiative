@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./components/Footer";
+
 
 
 export default function Page() {
@@ -38,32 +38,37 @@ export default function Page() {
        <div className="absolute top-6 left-4 md:left-8">
         <h1 className="text-white font-extrabold text-3xl md:text-4xl font-poppins">Latest News</h1>
        </div>
+       <Link href='/news-feed/empowering-women-with-disabilities-in-benue-state'>
        <div className="absolute top-20 left-10  md:ml-10 max-w-72 hover:p-4 hover:bg-white
         hover:shadow-xl mb-3">
-      <div className="relative">
-        
-      <Image src="/images/climateChange.jpeg" alt="news1"height={231} width={288} className="w-72"/>
-      <div className=" bg-black px-3 py-2 flex flex-col absolute left-0 bottom-0">
-          <time>
-            <span className="block text-3xl font-extrabold text-yellow-500">
-                28
-            </span> 
-            <span className="block text-lg font-bold text-white">
-              OCT
-            </span>
-            <span className="block text-sm text-neutral-200 font-semibold">
-              2024
-            </span>
-          </time>
+          <div className="relative">
+        <Image src="/images/climateChange.jpeg" alt="news1"height={231} width={288} className="w-72"/>
+        <div className=" bg-black px-3 py-2 flex flex-col absolute left-0 bottom-0">
+            <time>
+              <span className="block text-3xl font-extrabold text-yellow-500">
+                  28
+              </span> 
+              <span className="block text-lg font-bold text-white">
+                OCT
+              </span>
+              <span className="block text-sm text-neutral-200 font-semibold">
+                2024
+              </span>
+            </time>
+          </div>
         </div>
-      </div>
+          
+      
         <div className="mt-4 items-start flex flex-col w-full p-4 space-y-3">
       <p className="p-1 bg-neutral-300 px-2 text-sm rounded-xl">Economic Development</p>
       <p className="text-xl font-extrabold hover:underline hover:decoration-indigo-600 hover:decoration-4 hover:underline-offset-2 cursor-pointer">
         Empowering Women and girls with Disabilities through inlcusive Climate action.</p>
      </div>
        </div>  
-     <div className="absolute top-20 left-1/2 transform -translate-x-1/2 mb-3
+       </Link>
+       
+       <Link href='/news-feed/significant-action-on-the-disability-bill-benue-state'>
+       <div className="absolute top-20 left-1/2 transform -translate-x-1/2 mb-3
      hidden lg:block md:mr-10 max-w-72 hover:p-4 hover:bg-white hover:shadow-xl">
       <div className="relative">
       <Image src="/images/IMG_2477.JPG" alt="news1" height={231} width={288} className="w-72"/>
@@ -87,7 +92,10 @@ export default function Page() {
        hover:underline-offset-2 cursor-pointer">Significant Action on the Disability bill, Benue state.</p>
      </div>
        </div>  
-       <div className="absolute top-20 right-0 hidden md:block md:mr-20 
+       </Link>
+    
+    <Link href='/news-feed/empowering-women-and-girls-with-disabilities-through-inclusive-climate-action'>
+    <div className="absolute top-20 right-0 hidden md:block md:mr-20 
         max-w-72 hover:p-4  hover:bg-white hover:shadow-xl mb-3">
       <div className="relative">
       <Image src="/images/IMG_2479.JPG" alt="news1" height={231} width={288} className="max-h-[231px]"/>
@@ -111,6 +119,8 @@ export default function Page() {
        hover:decoration-4 hover:underline-offset-2 cursor-pointer text-wrap font-roboto">Empowering Inclusion in Benue State, Nigeria.</p>
      </div>
        </div>
+    </Link>
+       
        <Link href='/news-feed'>
        <button className="px-3 py-1 bg-blue-900 rounded-3xl text-white font-bold absolute left-1/2 
        transform -translate-x-1/2 bottom-0 md:px-6 md:py-2 hover:scale-105 transition-all ease-in-out"> See More</button>
