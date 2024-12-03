@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 const roboto_slab= Roboto_Slab({
   variable: '--font-Roboto_Slab',
   weight:'400',
+  subsets: 'cyrillic, cyrillic-ext, greek, greek-ext, latin, latin-ext, vietnamese'
 })
 
 
