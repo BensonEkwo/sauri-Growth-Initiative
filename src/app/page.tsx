@@ -46,7 +46,7 @@ export default function Page() {
         <div className=" bg-black px-3 py-2 flex flex-col absolute left-0 bottom-0">
             <time>
               <span className="block text-3xl font-extrabold text-yellow-500">
-                  28
+                  22
               </span> 
               <span className="block text-lg font-bold text-white">
                 OCT
@@ -87,9 +87,9 @@ export default function Page() {
         </div>
       </div>
         <div className="mt-4 items-start flex flex-col w-full p-4 space-y-3">
-      <p className="p-1 bg-neutral-300 px-2 text-sm rounded-xl">Economic Development</p>
+      <p className="p-1 bg-neutral-300 px-2 text-sm rounded-xl ">Action Story</p>
       <p className="text-xl font-extrabold hover:underline hover:decoration-indigo-600 hover:decoration-4
-       hover:underline-offset-2 cursor-pointer">Significant Action on the Disability bill, Benue state.</p>
+       hover:underline-offset-2 cursor-pointer mt-5">Significant Action on the Disability bill, Benue state.</p>
      </div>
        </div>  
        </Link>
@@ -102,10 +102,10 @@ export default function Page() {
       <div className=" bg-black px-3 py-2 flex flex-col absolute left-0 bottom-0">
           <time>
             <span className="block text-3xl font-extrabold text-yellow-500">
-                28
+                15
             </span> 
             <span className="block text-lg font-bold text-white">
-              NOV
+              SEP
             </span>
             <span className="block text-sm text-neutral-200 font-semibold">
               2024

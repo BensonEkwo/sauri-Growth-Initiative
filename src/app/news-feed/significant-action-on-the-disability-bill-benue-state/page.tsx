@@ -20,7 +20,7 @@ export default function page(){
         <div className="flex flex-col space-y-3  md:items-start md:justify-center
         md:ml-0 md:w-[700px] md:px-8 md:shadow-md md:mt-36 md:space-y-6 pb-6 md:pb-10">
         <p className="inline py-1 px-2 w-max bg-neutral-300 
-         text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+         text-xs rounded-xl font-semibold">ACTION STORY</p>
         <span className="text-sm md:text-base text-blue-950 font-poppins leading-6 md:leading-8">         
         On the 11th of November 2024, The Governor of Benue state Hyacinth Alia made a commitment to 
         the swift passage of the Disability Bill marks a turning point for disability rights in the 

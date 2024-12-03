@@ -20,7 +20,7 @@ export default function page(){
         <div className="flex flex-col space-y-5  md:items-start md:justify-center
         md:ml-0 md:w-[800px] md:px-8 md:shadow-md md:mt-36 md:space-y-8 px-4">
         <p className="inline py-1 px-2 w-max bg-neutral-300 
-         text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+         text-xs rounded-xl font-semibold">ECONOMIC DEVELOPMENT</p>
      <div className="md:grid md:grid-cols-2 md:gap-3 space-y-6 md:space-y-0">
      <div className="">
         <Image src='/images/climatechangecartoon2.jpeg'alt="" width={467} height={369}/>

@@ -17,7 +17,7 @@ export default function page(){
            <Image src='/images/climateChange.jpeg' alt="women and girls with disabilities group photo" width={321} height={227}
            className="md:w-[430px] md:h-[304px] object-cover"/>
             <div className="flex flex-col space-y-3 md:space-y-6 px-3">
-                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">ECONOMIC DEVELOPMENT</p>
             <h1 className="font-poppins font-bold md:text-3xl text-xl">Empowering Women With Disabilities in Benue State.</h1>
             <Link href='/news-feed/empowering-women-with-disabilities-in-benue-state'>
             <button className="bg-blue-800 text-white
@@ -32,7 +32,7 @@ export default function page(){
            for women and girls with Disabilities" width={321} height={227}
            className="md:min-w-[377px] md:h-[304px] max-h-[258px] "/>
             <div className="flex flex-col space-y-3 md:space-y-6 px-3">
-                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">ECONOMIC DEVELOPMENT</p>
             <h1 className="font-poppins font-bold md:text-3xl text-xl">Empowering Women and girls with disabilities through inclusive climate action.</h1>
            <Link href='/news-feed/empowering-women-and-girls-with-disabilities-through-inclusive-climate-action'>
            <button className="bg-blue-800 text-white
@@ -46,7 +46,7 @@ export default function page(){
            for women and girls with Disabilities" width={321} height={227}
            className="md:min-w-[377px] md:h-[304px] max-h-[258px] "/>
             <div className="flex flex-col space-y-3 md:space-y-6 px-3">
-                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">Action Story</p>
             <h1 className="font-poppins font-bold md:text-3xl text-xl">Significant Action on the Disability bill,Benue state.</h1>
            <Link href='/news-feed/significant-action-on-the-disability-bill-benue-state'>
            <button className="bg-blue-800 text-white

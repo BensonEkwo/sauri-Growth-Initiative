@@ -13,7 +13,7 @@ export default function page(){
             About Us
         </h1>
         <h1 className=" text-lg md:text-xl font-semibold md:leading-8">
-            The sauri Growth Initiative for women and Youth with disabilities
+            The Sauri Growth Initiative for women and Youth with Disabilities
             is a non-profit organization committed to empowering women and youth disabilities.
         </h1>
         <p className="font-poppins text-sm leading-6 md:leading-8 md:text-base ">

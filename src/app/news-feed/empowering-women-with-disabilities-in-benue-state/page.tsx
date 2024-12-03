@@ -20,7 +20,7 @@ export default function page(){
         <div className="flex flex-col space-y-3  md:items-start md:justify-center
         md:ml-0 md:w-[700px] md:px-8 md:shadow-md md:mt-36 md:space-y-6 pb-6 md:pb-10">
         <p className="inline py-1 px-2 w-max bg-neutral-300 
-         text-xs rounded-xl font-semibold">HUMANITARIAN ACTION</p>
+         text-xs rounded-xl font-semibold">ECONOMIC DEVELOPMENT</p>
         <span className="text-sm md:text-base text-blue-950 font-poppins leading-6 md:leading-8">         
     We're thrilled to share the success of our 2-day training on climate change and 
     resilience strategies for 30 women with disabilities in Otukpo, Benue State!  
@@ -36,7 +36,7 @@ export default function page(){
          clear understanding of climate change and its effects on women with different disabilities 
          through their group work presentations.
         </span>
-        <span>
+        <span className="w-full ">
         <Image src="/images/roundtable.jpeg" alt="women sitting in groups on a round table discussion" width={467} height={311} />
         <span className="text-xs"> women at a round table group discussion </span>
         </span>
