@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
-export default function page(){
+ const Page:React.FC=()=>{
+  
     useEffect(() => {
         // Inject the Donorbox script dynamically
         const script = document.createElement("script");
@@ -24,6 +25,7 @@ export default function page(){
         name="donorbox"
         allow="payment"
         allowPaymentRequest
+        
         frameBorder="0"
         scrolling="no"
         style={{ maxWidth: "500px", minWidth: "250px", width: "100%", height: "900px" }}
@@ -32,5 +34,5 @@ export default function page(){
     </div>
     )
 }
-
+export default Page;
 
