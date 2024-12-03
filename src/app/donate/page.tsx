@@ -24,6 +24,7 @@ import React, { useEffect } from "react";
         src="https://donorbox.org/embed/project-support-4?language=en-us"
         name="donorbox"
         allow="payment"
+        // @ts-expect-error
         allowPaymentRequest
         
         frameBorder="0"
