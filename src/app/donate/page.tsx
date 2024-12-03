@@ -24,7 +24,6 @@ export default function page(){
         name="donorbox"
         allow="payment"
         allowPaymentRequest
-        seamless="seamless"
         frameBorder="0"
         scrolling="no"
         style={{ maxWidth: "500px", minWidth: "250px", width: "100%", height: "900px" }}
