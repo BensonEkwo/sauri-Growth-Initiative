@@ -21,16 +21,16 @@ export default function page(){
         md:ml-0 md:w-[700px] md:px-8 md:shadow-md md:mt-36 md:space-y-6 pb-6 md:pb-10">
         <p className="inline py-1 px-2 w-max bg-neutral-300 
          text-xs rounded-xl font-semibold">ECONOMIC DEVELOPMENT</p>
-        <span className="text-sm md:text-base text-blue-950 font-poppins leading-6 md:leading-8">         
+        <span className="text-base  md:text-base text-blue-950 font-poppins leading-6 md:leading-8">         
     We're thrilled to share the success of our 2-day training on climate change and 
     resilience strategies for 30 women with disabilities in Otukpo, Benue State!  
         </span>
-        <span  className="text-sm md:text-base text-blue-950 font-poppins leading-6 md:leading-8">
+        <span  className="text-base md:text-base text-blue-950 font-poppins leading-6 md:leading-8">
         we kicked off the training with a startling realization - 70% of 
         our participants had little to no knowledge about climate change and its impact 
         on their lives. 
         </span>
-        <span className="text-sm md:text-base text-blue-950 font-poppins leading-6 md:leading-8">
+        <span className="text-base md:text-base text-blue-950 font-poppins leading-6 md:leading-8">
         But after an engaging and informative session, 
         we witnessed a remarkable transformation! The women demonstrated a
          clear understanding of climate change and its effects on women with different disabilities 
@@ -40,7 +40,7 @@ export default function page(){
         <Image src="/images/roundtable.jpeg" alt="women sitting in groups on a round table discussion" width={467} height={311} />
         <span className="text-xs"> women at a round table group discussion </span>
         </span>
-        <span className="text-sm md:text-base text-blue-950 font-poppins font-semibold leading-6 md:leading-8">
+        <span className="text-base md:text-base text-blue-950 font-poppins font-semibold leading-6 md:leading-8">
         We're proud to have created a safe space for these incredible
          women to learn, share, and grow.
         </span>

@@ -28,10 +28,10 @@ export const Navbar=()=>{
    },[])
    
 return(
-<nav className={`fixed top-0 z-50 bg-white w-full ${isScrolled ? 'md:h-20 border-b-2 border-gray-600' : 'md:h-28'}`}>
+<nav className={`fixed top-0 z-50 bg-white w-full ${isScrolled ? 'md:h-20 border-b-2 border-gray-600 max-h-48' : 'md:h-28 max-h-52'}`}>
     <div className='flex  md:mx-6 mx-2 md:mb-3  items-center justify-between '>
  <div className=' inline-flex items-center w-1/4 h-1/4'>
-    <Image src="/images/img1.png" width={100} height={100} alt='logo' layout='responsive' className={`${isScrolled ? 'md:max-h-24 md:max-w-24':'md:max-h-32 md:max-w-32' }`}/>
+    <Image src="/images/img1.png" width={100} height={100} alt=' sauri growth initiative logo' layout='responsive' className={`${isScrolled ? 'md:max-h-24 md:max-w-24':'md:max-h-32 md:max-w-32' }`}/>
     <span>
         <h2> <span className={`block font-bold text-sm ${isScrolled ? 'md:text-lg' : 'md:text-2xl'}`}>SAURI </span>
             <span className={`block font-semibold text-xs  ${isScrolled ? 'md:text-xs' : 'md:text-sm'}`}>Growth Initiative</span></h2></span>

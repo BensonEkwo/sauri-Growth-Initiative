@@ -7,7 +7,7 @@ export default function page(){
             width={1146} height={350} quality={100} className="w-full h-[200px] md:h-[350px] object-cover"/>
           </div>
           <div className="flex flex-col items-start justify-center  bg-white md:ml-28
-         w-80 md:w-[700px] px-6 md:px-8 text-blue-950 shadow-md -mt-10 md:-mt-16 z-30 py-4 md:py-5">
+         w-80 md:w-[700px] px-3 md:px-8 text-blue-950 shadow-md -mt-10 md:-mt-16 z-30 py-4 md:py-5">
         <div className="space-y-4 md:space-y-6">
         <h1 className=" text-2xl md:text-4xl font-bold">
             About Us

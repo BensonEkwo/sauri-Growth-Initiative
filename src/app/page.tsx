@@ -39,7 +39,7 @@ export default function Page() {
         <h1 className="text-white font-extrabold text-3xl md:text-4xl font-poppins">Latest News</h1>
        </div>
        <Link href='/news-feed/empowering-women-with-disabilities-in-benue-state'>
-       <div className="absolute top-20 left-10  md:ml-10 max-w-72 hover:p-4 hover:bg-white
+       <div className="absolute top-20 left-14  md:ml-10 max-w-72 hover:p-4 hover:bg-white
         hover:shadow-xl mb-3">
           <div className="relative">
         <Image src="/images/climateChange.jpeg" alt="news1"height={231} width={288} className="w-72"/>
@@ -155,7 +155,7 @@ export default function Page() {
       <h1 className="  font-bold font-poppins text-3xl md:font-extrabold md:text-5xl md:mb-10 ml-6 mb-5"> Our approach</h1>
       <div className="flex flex-col items-start justify-evenly  w-full  md:flex-row  md:px-0 pb-6 space-y-6 md:space-y-0 md:space-x-3 ">
       <div className="flex-1 flex-col items-center justify-between  px-6 md:space-y-5 space-y-3 md:px-0">
-      <Image src='/images/policychange.jpeg' alt=" a physically challenged woman sitting on her wheel chair and holding her voters card" width={300} height={223}
+      <Image src='/images/policychange.jpeg' alt="group picture of women and girls" width={300} height={223}
       className="  w-[353px] h-[264px] object-cover"/>
       <h1 className="text-xl font-bold font-poppins">Advocating for Rights and Inclusion.</h1>
      
@@ -187,7 +187,7 @@ export default function Page() {
              </div>
       </div>
       <div className="flex-1 flex-col items-center justify-between  px-6 md:space-y-5 space-y-3 md:px-0">
-      <Image src='/images/grouppic.jpeg' alt="our work" width={300} height={223}
+      <Image src='/images/grouppic.jpeg' alt="group picture of stakeholders including women and men" width={300} height={223}
       className="object-cover w-[353px] h-[264px]"/>
       <h1 className="text-xl font-bold font-poppins">Driving Inclusive Policy Change</h1>
        {/* change this p tag */}
