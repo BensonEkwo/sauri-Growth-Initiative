@@ -13,8 +13,8 @@ export default function Page() {
         <Image src='/images/IMG_2468.JPG' alt='cover' width={100} height={100} layout="responsive"
         className="w-full max-h-1/2 md:max-h-[75vh] max-w-full object-cover"/>
         <div  className="absolute md:top-36 md:left-20 backdrop-blur-xs top-12 left-8">
-        <h1 className=' font-extrabold md:text-4xl text-lg text-white font-poppins'>
-            We are the Sauri Growth Initiative <span className="block">for Women and Youth with Dissabilities.</span> 
+        <h1 className=' font-extrabold md:text-4xl text-2xl text-white font-poppins'>
+            We are Sauri Growth Initiative <span className="block">for Women and Youth with Dissabilities.</span> 
             <span className="block">We empower Women and youth with Dissabilities.</span>
         </h1>
         <Link href='/about-us'>
@@ -172,7 +172,7 @@ export default function Page() {
       </div>
       <div className="flex-1 flex-col items-center justify-between  px-6 md:space-y-5 space-y-3 md:px-0">
         
-      <Image src='/images/PHOTO-2024-11-12-14-45-03 3.jpg' alt="a man addressing children in the classroom " width={300} height={223}
+      <Image src='/images/PHOTO-2024-11-12-14-45-03 3.jpg' alt="a man addressing children in the classroom" width={300} height={223}
       className="  object-cover w-[353px] h-[264px] "/>
       <h1 className="text-xl font-bold font-poppins">Promoting Inclusive Education</h1>
        {/* change this p tag */}

@@ -42,8 +42,7 @@ export default function page(){
            </div>
            <div className="flex flex-col space-y-3 items-center py-4 md:flex-row md:justify-between md:mx-6 md:px-20 md:space-x-8
            shadow-lg md:py-3 md:my-8 my-6">
-           <Image src='/images/IMG_2477.JPG' alt="four resilienet strategies on climate change 
-           for women and girls with Disabilities" width={321} height={227}
+           <Image src='/images/IMG_2477.JPG' alt="group picture of stakeholders including women and men" width={321} height={227}
            className="md:min-w-[377px] md:h-[304px] max-h-[258px] "/>
             <div className="flex flex-col space-y-3 md:space-y-6 px-3">
                 <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold">Action Story</p>
