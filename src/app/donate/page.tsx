@@ -24,9 +24,6 @@ import React, { useEffect } from "react";
         src="https://donorbox.org/embed/project-support-4?language=en-us"
         name="donorbox"
         allow="payment"
-        // @ts-expect-error
-        allowPaymentRequest
-        
         frameBorder="0"
         scrolling="no"
         style={{ maxWidth: "500px", minWidth: "250px", width: "100%", height: "900px" }}
@@ -36,4 +33,3 @@ import React, { useEffect } from "react";
     )
 }
 export default Page;
-

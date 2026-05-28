@@ -6,6 +6,7 @@ import { Navbar } from "./components/navbar";
 import {Appwrapper} from "@/app/context"
 import {Roboto_Slab} from 'next/font/google'
 import Footer from "./components/Footer";
+import { VisitorTracker } from "./components/analytics/VisitorTracker";
 
 const roboto_slab= Roboto_Slab({
   variable: '--font-Roboto_Slab',
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${roboto_slab.variable} ${roboto_slab.className} font-rbt antialiased bg-white text-black flex flex-col min-h-screen`}
       >
         <Appwrapper>
+        <VisitorTracker/>
         <header>
         <Navbar/>
         </header>

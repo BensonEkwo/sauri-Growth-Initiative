@@ -1,6 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-export default function page(){
+import { getPosts } from "@/lib/postsStore"
+
+export default async function page(){
+    const posts = (await getPosts()).filter((post) => post.importedFrom !== "legacy-news-feed")
+
     return(
         <div className="flex flex-col items-center  mx-0 mt-16 px-6  ">
            <div style={{backgroundImage:'url(/images/IMG_2486.JPG)'}}
@@ -12,6 +16,23 @@ export default function page(){
             relative inline-block  after:border-b-8  after:border-blue-600 after:block pb-6 md:pb-10
             after:w-20 after:absolute after:bottom-0 after:right-1/2 after:transform after:translate-x-1/2 "> Our Latest News</h1>
            </div>
+           {posts.map((post) => (
+           <div key={post.id} className="flex w-full flex-col space-y-3 items-center py-4 md:flex-row md:justify-between md:mx-6 md:px-20 md:space-x-8
+           shadow-lg md:py-3 md:my-8 my-6">
+           <img src={post.mediaItems[0]?.url} alt={post.mediaItems[0]?.fileName || post.title}
+           className="h-[227px] w-full object-cover md:h-[304px] md:w-[430px]"/>
+            <div className="flex flex-col space-y-3 md:space-y-6 px-3">
+                <p className="inline py-1 px-2 w-max bg-neutral-300  text-xs rounded-xl font-semibold uppercase">{post.category}</p>
+            <h1 className="font-poppins font-bold md:text-3xl text-xl">{post.title}</h1>
+            <p className="text-sm leading-6 text-slate-700">{post.excerpt}</p>
+            <Link href={`/news-feed/${post.slug}`}>
+            <button className="bg-blue-800 text-white
+            inline-block w-max text-lg font-semibold py-1 px-4 rounded-2xl
+          ">Read Story </button>
+            </Link>
+            </div>
+           </div>
+           ))}
            <div className="flex flex-col space-y-3 items-center py-4 md:flex-row md:justify-between md:mx-6 md:px-20 md:space-x-8
            shadow-lg md:py-3 md:my-8 my-6">
            <Image src='/images/climateChange.jpeg' alt="women and girls with disabilities group photo" width={321} height={227}
