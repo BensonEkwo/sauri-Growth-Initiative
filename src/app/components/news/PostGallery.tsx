@@ -1,4 +1,4 @@
-import { StoredPost } from "@/lib/postsStore";
+import type { StoredPost } from "@/lib/postsStore";
 
 type PostGalleryProps = {
   post: StoredPost;

@@ -1,4 +1,5 @@
-import { readJsonFile, writeJsonFile } from "./dataStore";
+import { readJsonFile } from "./dataStore";
+import { getR2Object, putR2Object } from "./cloudflareR2";
 
 export type GalleryLayout = "feature" | "grid" | "stack";
 
@@ -28,6 +29,13 @@ type LegacyPost = Partial<StoredPost> & {
   mediaUrl?: string;
   mediaKey?: string;
 };
+
+const LOCAL_POSTS_FILE = "posts.json";
+const DEFAULT_R2_POSTS_KEY = "admin/posts.json";
+
+function getPostsKey() {
+  return process.env.CLOUDFLARE_R2_POSTS_KEY || DEFAULT_R2_POSTS_KEY;
+}
 
 function slugify(value: string) {
   return value
@@ -67,7 +75,7 @@ function normalizePost(post: LegacyPost): StoredPost {
 }
 
 export async function getPosts() {
-  const posts = await readJsonFile<LegacyPost[]>("posts.json", []);
+  const posts = await readCloudflarePosts();
   return posts.map(normalizePost);
 }
 
@@ -82,9 +90,31 @@ export async function getPostById(id: string) {
 }
 
 export async function savePosts(posts: StoredPost[]) {
-  await writeJsonFile("posts.json", posts);
+  await putR2Object(getPostsKey(), JSON.stringify(posts, null, 2), "application/json");
 }
 
 export function createSlug(value: string) {
   return slugify(value);
+}
+
+async function readCloudflarePosts() {
+  try {
+    const object = await getR2Object(getPostsKey());
+
+    if (!object) {
+      return readLocalPosts();
+    }
+
+    return JSON.parse(object.body) as LegacyPost[];
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      throw new Error("Cloudflare R2 posts JSON is invalid.");
+    }
+
+    return readLocalPosts();
+  }
+}
+
+async function readLocalPosts() {
+  return readJsonFile<LegacyPost[]>(LOCAL_POSTS_FILE, []);
 }

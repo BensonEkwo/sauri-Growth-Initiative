@@ -18,9 +18,10 @@ export function CreatePostForm() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus({ type: "loading", message: "Publishing post..." });
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const response = await fetch("/api/admin/posts", {
       method: "POST",
       body: formData,
@@ -32,7 +33,7 @@ export function CreatePostForm() {
       return;
     }
 
-    event.currentTarget.reset();
+    form.reset();
     setSelectedFiles([]);
     setStatus({ type: "success", message: "Post saved and media gallery uploaded to Cloudflare R2." });
   }

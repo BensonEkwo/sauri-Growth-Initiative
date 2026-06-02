@@ -4,6 +4,8 @@ import { getAnalyticsEvents, summarizeAnalytics } from "@/lib/analyticsStore";
 import { requireAdmin } from "@/lib/adminAuth";
 import { getPosts } from "@/lib/postsStore";
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminPage() {
   if (!(await requireAdmin())) {
     redirect("/admin/login");

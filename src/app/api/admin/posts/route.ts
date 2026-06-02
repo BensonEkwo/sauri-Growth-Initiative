@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/adminAuth";
-import { writeJsonFile } from "@/lib/dataStore";
 import { uploadToR2 } from "@/lib/cloudflareR2";
-import { getPosts, type StoredPost } from "@/lib/postsStore";
+import { getPosts, savePosts, type StoredPost } from "@/lib/postsStore";
 import { sanitizeFileName, sanitizeMultiline, sanitizeText, validateDate, validateGalleryLayout, validateImageFile } from "@/lib/validation";
 
 export const runtime = "nodejs";
@@ -75,7 +74,7 @@ export async function POST(request: Request) {
     createdAt: new Date().toISOString(),
   };
 
-  await writeJsonFile("posts.json", [post, ...posts]);
+  await savePosts([post, ...posts]);
 
   return NextResponse.json({ post });
 }

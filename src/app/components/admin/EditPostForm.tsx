@@ -3,7 +3,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { FiGrid, FiImage, FiLayout, FiSave, FiStar } from "react-icons/fi";
-import { StoredPost } from "@/lib/postsStore";
+import type { StoredPost } from "@/lib/postsStore";
 
 type Status = {
   type: "idle" | "loading" | "success" | "error";

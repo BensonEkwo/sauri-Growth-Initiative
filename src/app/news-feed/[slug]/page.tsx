@@ -2,16 +2,13 @@ import { IoArrowBack } from "react-icons/io5";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PostGallery } from "@/app/components/news/PostGallery";
-import { getPostBySlug, getPosts } from "@/lib/postsStore";
+import { getPostBySlug } from "@/lib/postsStore";
 
 type NewsPostPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  const posts = await getPosts();
-  return posts.map((post) => ({ slug: post.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function NewsPostPage({ params }: NewsPostPageProps) {
   const { slug } = await params;

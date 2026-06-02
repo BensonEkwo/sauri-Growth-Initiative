@@ -6,6 +6,8 @@ import { DeletePostButton } from "@/app/components/admin/DeletePostButton";
 import { requireAdmin } from "@/lib/adminAuth";
 import { getPosts } from "@/lib/postsStore";
 
+export const dynamic = "force-dynamic";
+
 export default async function GalleryPage() {
   if (!(await requireAdmin())) {
     redirect("/admin/login");
