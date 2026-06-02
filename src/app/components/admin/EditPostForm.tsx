@@ -2,7 +2,7 @@
 
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import { FiGrid, FiImage, FiLayout, FiSave, FiStar } from "react-icons/fi";
+import { FiGrid, FiImage, FiLayout, FiSave, FiStar, FiCheckCircle, FiAlertCircle, FiLoader } from "react-icons/fi";
 import type { StoredPost } from "@/lib/postsStore";
 
 type Status = {
@@ -99,14 +99,25 @@ export function EditPostForm({ post }: { post: StoredPost }) {
           </ol>
         </div>
       ) : null}
-      <div className="flex flex-col gap-3 md:col-span-2 md:flex-row md:items-center md:justify-between">
-        <p className={`text-sm font-semibold ${status.type === "error" ? "text-red-700" : "text-blue-900"}`}>
-          {status.message}
-        </p>
-        <button disabled={status.type === "loading"} className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-blue-900 px-5 py-3 font-bold text-white hover:bg-blue-800 disabled:opacity-70 sm:w-max">
-          <FiSave />
-          Save Changes
-        </button>
+      <div className="flex flex-col gap-3 md:col-span-2">
+        {status.type !== "idle" && (
+          <div className={`flex items-center gap-3 rounded-md border px-4 py-3 text-sm font-semibold
+            ${status.type === "success" ? "border-green-200 bg-green-50 text-green-800" : ""}
+            ${status.type === "error" ? "border-red-200 bg-red-50 text-red-800" : ""}
+            ${status.type === "loading" ? "border-blue-200 bg-blue-50 text-blue-800" : ""}
+          `}>
+            {status.type === "success" && <FiCheckCircle className="shrink-0 text-green-600" size={18} />}
+            {status.type === "error" && <FiAlertCircle className="shrink-0 text-red-600" size={18} />}
+            {status.type === "loading" && <FiLoader className="shrink-0 animate-spin text-blue-600" size={18} />}
+            {status.message}
+          </div>
+        )}
+        <div className="flex justify-end">
+          <button disabled={status.type === "loading"} className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-blue-900 px-5 py-3 font-bold text-white hover:bg-blue-800 disabled:opacity-70 sm:w-max">
+            <FiSave />
+            Save Changes
+          </button>
+        </div>
       </div>
     </form>
   );
