@@ -12,8 +12,8 @@ function Footer() {
     border-t  decoration-slate-400 '>
         <div className='flex flex-col items-center justify-center space-y-2'>
         <h1 className='text-lg font-poppins font-bold text-blue-950'>Sauri Growth initiative </h1>
-        <p className=' font-poppins  text-blue-950 space-y-2'><span className='ml-16'>Office Address Room 002</span>
-        <span className='block text-nowrap mx-1'>Oyibo Block,Women centre, Abuja, Nigeria </span>
+        <p className=' font-poppins  text-blue-950 space-y-2'><span className='ml-16'>Office Address</span>
+        <span className='block text-nowrap mx-1'>No 23 Norbert Street, Jahi, FCT Abuja, Nigeria </span>
         <span className='block ml-2'>Tel: +234 9032208922, +234 9064658819</span>
         <span className='block ml-14'>Email: saurigrowth@gmail.com </span></p>
         </div>
